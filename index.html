@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede social</title>
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <script src="https://kit.fontawesome.com/ced989c14d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="start">
+            <img class="logo" src="./src/assets/img/logo.svg" alt="logo da rede">
+            <button class="button-exit" type="submit">Sair</button>
+        </div>
+
+    </header>
+    <div class="top-section">
+        <section>
+            <div class="perfil">
+                <img class="img-perfil" src="./src/assets/img/user1.svg" alt="">
+
+                <div class="info-perfil">
+                    <span class="name-perfil">Samuel Leão</span>
+                    <span class="descriptio-perfil">Front end Engineer</span>
+                </div>
+
+            </div>
+
+            <div class="new-post">
+                <input class="name__new-post" type="text" placeholder="Digite o título do post">
+                <textarea class="area-post" name="" id="" cols="31" rows="10"
+                    placeholder="Digitar a descrição do post"></textarea>
+            </div>
+            <div class="publish-button">
+                <button class="button-post" type="submit">Postar</button>
+
+            </div>
+        </section>
+        <section class="followers-suggestion">
+            <span class="title__list-follower">Sugestoẽs para seguir</span>
+            <ul class="list-followers">
+            </ul>
+        </section>
+
+    </div>
+
+    <main>
+        <div class="posts">
+            <h1 class="title-posts">Posts</h1>
+            <ul class="list-posts">
+                <div class="container- like">
+                    <i class="icone hidden fa-solid fa-heart"></i>
+                </div>
+            </ul>
+
+        </div>
+    </main>
+
+    <dialog class="modal-container">
+
+    </dialog>
+
+
+    <script src="./src/scripts/users.js"></script>
+    <script src="./src/scripts/sugestUsers.js"></script>
+    <script src="./src/scripts/posts.js"></script>
+    <script src="./src/scripts/index.js"></script>
+</body>
+
+</html>

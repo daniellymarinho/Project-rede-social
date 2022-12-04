@@ -1,0 +1,16 @@
+/*Colors*/
+:root {
+    --cor-primaria: #212529;
+    --cor-secundaria: #ffff;
+
+    --grey-1:#495057;
+    --grey-2:#868E96;
+    --grey-3:#DEE2E6;
+    --grey-4:#F8F9FA;
+
+    --brand-color-1: #4263EB;
+    --brand-color-2: #364FC7;
+    --brand-color-3: #D7443E;
+
+    --font: 'Inter', sans-serif;
+}
