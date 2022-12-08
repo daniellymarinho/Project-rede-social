@@ -84,6 +84,7 @@ function createPost(post, parentElement) {
     const divnames = document.createElement("div")
     const name = document.createElement("span")
     const description = document.createElement("span")
+    const postText = document.createElement("div")
     const namePost = document.createElement("span")
     const descriptionPost = document.createElement("p")
     const postFooter = document.createElement("div")
@@ -111,6 +112,7 @@ function createPost(post, parentElement) {
     like.classList.remove("hidden")
     openButton.dataset.id = post.id
     likeCount.classList.add("like")
+    postText.classList.add("post-text")
 
 
     openButton.addEventListener("click", () => {
@@ -134,8 +136,8 @@ function createPost(post, parentElement) {
     divnames.appendChild(description)
     postContainer.appendChild(divnames)
     itemuser.appendChild(postContainer)
-    itemuser.appendChild(namePost)
-    itemuser.appendChild(descriptionPost)
+    postText.append(namePost, descriptionPost)
+    itemuser.appendChild(postText)
     itemuser.appendChild(postFooter)
     postFooter.append(openButton, like, likeCount)
     parentElement.appendChild(itemuser)
